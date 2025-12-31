@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ff6b6b, #4ecdc4);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #ffd93d;
+            animation: fall 3s linear infinite;
+        }
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+        button {
+            background: #ffd93d;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #ffb347;
+        }
+    </style>
+</head>
+<body>
+    <div class="confetti" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="confetti" style="left: 20%; animation-delay: 1s;"></div>
+    <div class="confetti" style="left: 30%; animation-delay: 2s;"></div>
+    <div class="confetti" style="left: 40%; animation-delay: 0.5s;"></div>
+    <div class="confetti" style="left: 50%; animation-delay: 1.5s;"></div>
+    <div class="confetti" style="left: 60%; animation-delay: 2.5s;"></div>
+    <div class="confetti" style="left: 70%; animation-delay: 0.8s;"></div>
+    <div class="confetti" style="left: 80%; animation-delay: 1.8s;"></div>
+    <div class="confetti" style="left: 90%; animation-delay: 2.8s;"></div>
+
+    <h1>Happy New Year! 🎉</h1>
+    <p>May this year bring you joy, success, and endless happiness. Here's to new beginnings and cherished memories!</p>
+    <button onclick="alert('Wishing you a fantastic year ahead! ☺️')">Click for Extra Cheer</button>
+</body>
+</html>
